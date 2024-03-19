@@ -6,6 +6,7 @@ private BST bsttree = new BST();
 private HashMap <String, String> hashMap = new HashMap<>();
 
 public void agregarPalabra(String word, String palabra){
+    word = word.toLowerCase();
     if (bsttree.root == null){
     bsttree.root = bsttree.insert(bsttree.root, word);
     }
@@ -16,6 +17,7 @@ public void agregarPalabra(String word, String palabra){
 }
     
 public String getTraduccion(String key){
+    key = key.toLowerCase();
     return hashMap.get(key);
 }
 

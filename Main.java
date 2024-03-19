@@ -11,8 +11,9 @@ public class Main {
 
 		// tree.root = tree.deleteNode(tree.root, 20);
 
+
         banco.agregarPalabra("house", "casa");
-        System.out.println(banco.getTraduccion("house"));
+        System.out.println(banco.getTraduccion("HOUSE"));
 	}
 
     }
