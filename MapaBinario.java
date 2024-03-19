@@ -15,7 +15,7 @@ class BST {
 	void inorder(Node root) {
 		if (root != null) {
 			inorder(root.left);
-			System.out.print(root.key + " ");
+			System.out.print(root.key + ":" + Banco.hashMap.get(root.key)+ " ");
 			inorder(root.right);
 		}
 	}

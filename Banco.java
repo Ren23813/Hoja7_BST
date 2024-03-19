@@ -3,7 +3,7 @@ import java.util.HashMap;
 public class Banco {
 
 private BST bsttree = new BST();
-private HashMap <String, String> hashMap = new HashMap<>();
+public static HashMap <String, String> hashMap = new HashMap<>();
 
 public void agregarPalabra(String word, String palabra){
     word = word.toLowerCase();

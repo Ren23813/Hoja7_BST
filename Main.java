@@ -1,19 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-        // BST tree = new BST();
         Banco banco = new Banco();
-		/* Let us create following BST
-			  50
-			 /	 \
-			30	  70
-			/ \   / \
-		   20 40 60    */
 
-		// tree.root = tree.deleteNode(tree.root, 20);
-
-
-        banco.agregarPalabra("house", "casa");
+        System.out.println("Configuraciones iniciales de palabras, según la hoja de trabajo: ");
+		banco.agregarPalabra("house", "casa");
+		banco.agregarPalabra("dog", "perro");
+		banco.agregarPalabra("homework", "tarea");
+		banco.agregarPalabra("woman", "mujer");
+		banco.agregarPalabra("town", "pueblo");
+		banco.agregarPalabra("yes", "si");
+		
+		System.out.println("Se agregaron las palabras: house, dog, homework, woman, town, yes");
+        
         System.out.println(banco.getTraduccion("HOUSE"));
+		banco.getAllKeys();
+
+		
 	}
 
     }
