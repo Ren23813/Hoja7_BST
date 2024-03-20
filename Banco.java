@@ -18,7 +18,12 @@ public void agregarPalabra(String word, String palabra){
     
 public String getTraduccion(String key){
     key = key.toLowerCase();
-    return hashMap.get(key);
+    if(hashMap.get(key)== null){
+        return "No existe registro de dicha palabra";
+    }
+    else{
+        return hashMap.get(key);
+    }
 }
 
 public void getAllWords(){
