@@ -24,7 +24,7 @@ public class Main {
 			case "2":
 				System.out.println("Indique la palabra a traducir: ");
 				String word = scan.nextLine();
-				System.out.println(Controlador.banco.getTraduccion(word)); 	//++++++++++++++++++++++++++++++++
+				System.out.println(Controlador.banco.getTraduccion(word)); 	
 				break;
 			case "3":
 				System.out.println("Indique el nombre del archivo que tiene el compendio de palabras y sus traducciones: ");
@@ -33,7 +33,7 @@ public class Main {
 				System.out.println("Se leyó correctamente el archivo");
 				break;
 			case "4":
-				System.out.println("Indique el nombre del archivo a traducir");
+				System.out.println("Indique el nombre del archivo a traducir (considere que se lee únicamente la primera línea del archivo).");
 				String archivo2 = scan.nextLine();
 				System.out.print("\nTraducción:");
 				controlador.translate(archivo2);	
