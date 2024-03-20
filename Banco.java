@@ -21,8 +21,9 @@ public String getTraduccion(String key){
     return hashMap.get(key);
 }
 
-public void getAllKeys(){
+public void getAllWords(){
     bsttree.inorder(bsttree.root);
+    System.out.println("\n");
 }
     
 }
