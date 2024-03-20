@@ -28,6 +28,24 @@ public class Lector {
                 e.printStackTrace();
         }
     }
+
+    public String[] leerPaTraducir(String archivo){
+        String[] partes = null;
+        try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                line = line.toLowerCase();
+                partes = line.split(" ");
+                }
+            }
+         catch (IOException e) {
+            e.printStackTrace();
+    }
+    return partes;
+    }
+
+
+
     private int contarLineas(String archivo) throws IOException {
         try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
             int count = 0;
